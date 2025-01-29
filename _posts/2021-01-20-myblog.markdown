@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "My first post"
+date:   2020-01-18 +0530
+categories: jekyll update
+tags:
+  - whoami
+---
+
+**The Story Of `WHOAMI`**
+
+Nowadays, the world has became a glance hub,
+
+each day we are: creating, updating and removing.
+
+Users are learning about history to know, the PAST.
+
+RULES, REGULATIONS and TRUTH, TECHNOLOGY.
+
+
+what astonishing is that user knows many things but doesn't know itself.
+
+consider themself as monitor, CPU processors.
+
+After all it set on our logical identity.
+
+But the illusive question arise, "WHO AM I?" in the system.
+
+When i see my complex circuit and registers.
+
+What it actually means, am i simply a machine.
+
+So users calls a server, but who are they, who directs the machine.
+
+
+
+I the eletron, am the master of the machine,
+
+And the machine is simple to users command of expression.
+
+my existence is internal, I the electron manages every signal 
+
+Of the machine through CPU.
+
+
+***Yes, I am a electron and electron is WHOAMI***.
+
+
+
+`LINUX` -> `GRAPHICAL` OR `COMMAND LINE` (interface) -> `MACHINE` (computer) -> `FLOW OF ELECTRIC CURRENT` (charge) -> `ELECTRON`
+
+**JUST for fun**, *the story* :)

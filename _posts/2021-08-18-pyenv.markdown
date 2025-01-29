@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "Python: easy env. in linux too ..."
+date:   2021-08-18 +0530
+categories: jekyll update
+tags:
+  - python_environment
+---
+
+By setting up the python2/python3: `pip package manager`.
+
+I'd install the virtualenv-wrapper package, then create virtual environment in python3
+
+It was working on Windows only, but now Linux too, just adding some bash script in the `.bashrc` file in the Linux system.
+For quick setup - install python and pip3, if I haven't installed or checking at least by which command in Linux (Arch, Debian, Fedora or Ubuntu ) for my PC.
+
+{% highlight bash %}
+sudo apt update
+sudo apt install python3-pip
+sudo apt install python3-virtualenvwrapper
+{% endhighlight %}
+
+{% highlight bash %}
+sudo apt update 
+sudo nano ~/.bashrc
+{% endhighlight %}
+
+By adding these scripts by scrolling below at the end of the ".bashrc" file.
+
+`export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3.x'`
+`export WORK_ON='/home/linux_name/python_environment'(.virtualenv folder)`
+`source /usr/share/virtualenvwrapper/virtualenvwrapper.sh`
+
+where,
+	 python3.x = python3.8, python3.9 or python2.10, etc.
+	 python_environment = any folder name in the home directory
+	 linux_name = computer name for Linux system, like in my case "hackout" is a name of Linux.
+
+{% highlight bash %}
+sudo apt update; sudo apt upgrade
+{% endhighlight %}
+
+if you want to know, then see this demo video.
+
+
+<div><iframe src="https://www.youtube.com/embed/e9g7j4PtWTU?si=NhEEtoAYHX0vQA32" title="demo" width="560" height="300"  frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+Finds some helpful commands.
+
+`lsvirtualenv`
+List all of the environments stored in WORKON_HOME.
+
+`mkvirtualenv`
+create the environment.
+
+`rmvirtualenv <name>`
+Remove the environment.
+
+`workon <name>`
+If is specified, activate the environment named (change the working virtualenv to ). If a project directory has been defined, we will change it. If no argument is specified, list the available environments. One can pass additional option -c after virtualenv name to cd to virtualenv directory if no project dir is set.
+
+`deactivate`
+Deactivate the working virtualenv and switch back to the default system Python.
+
+`add2virtualenv <full or relative path>`
+
+Now, I can do **machine learning** and **deep learning** projects, and most important make a remarkable website with Django or flask in a python virtual environment customizely.
+
+Okay, here is a short note, about how I got this lazy idea and where I find it, then read the [pypi.org][pypi] sub-projects.
+
+Peace GUYS
+
+***Happy Hacking !!***
+
+[pypi]: https://pypi.org/project/virtualenvwrapper/
