@@ -1,0 +1,74 @@
+# Jekyll Blog Minima Theme
+#
+#
+# For technical reasons, this file is *NOT* reloaded automatically
+# 'bundle install'
+# 'bundle update'
+# 'bundle exec jekyll serve', if I change this file, restart the server process. OR
+# 'bundle exec jekyll serve --incremental'
+# 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# in the templates via {{ site.myvariable }}.
+title: My Blogs
+author:
+  name: ajay0th
+  email: blog@ajay0th.github.io
+
+description: >
+  Hi there, nice to meet you. I appreciate for visiting and read my blogs.
+
+# Build settings
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Theme-specific settings
+
+header_pages:
+  - about.md
+
+# Set to `true` to show excerpts on the homepage.
+#show_excerpts: false
+
+# Minima specific settings, which are only available from Minima 3.0 onward.
+minima:
+  # Minima skin selection.
+  # Available skins are:
+  # classic            Default, light color scheme.
+  # dark               Dark variant of the classic skin.
+  # auto               Adaptive skin based on the default classic and dark skins.
+  # solarized-light    Light variant of solarized color scheme.
+  # solarized-dark     Dark variant of solarized color scheme.
+  # solarized          Adaptive skin for solarized color scheme skins.
+  skin: dark
+  
+  # Minima date format.
+  # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
+  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
+  #date_format: "%b-%d-%Y"
+
+  # Generate social links in footer.
+  #social_links:
+  #  - { platform: devto,          user_url: "https://dev.to/" }
+  #  - { platform: dribbble,       user_url: "https://dribbble.com/" }
+  #  - { platform: facebook,       user_url: "https://www.facebook.com/" }
+  #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/" }
+  #  - { platform: github,         user_url: "https://github.com/" }
+  #  - { platform: gitlab,         user_url: "https://gitlab.com/" }
+  #  - { platform: google_scholar, user_url: "https://scholar.google.com/" }
+  #  - { platform: instagram,      user_url: "https://www.instagram.com/" }
+  #  - { platform: keybase,        user_url: "https://keybase.io/" }
+  #  - { platform: linkedin,       user_url: "https://www.linkedin.com/in/" }
+  #  - { platform: microdotblog,   user_url: "https://micro.blog/" }
+  #  - { platform: pinterest,      user_url: "https://www.pinterest.com/" }
+  #  - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/" }
+  #  - { platform: telegram,       user_url: "https://t.me/" }
+  #  - { platform: twitter,        user_url: "https://twitter.com/" }
+  #  - { platform: x,              user_url: "https://x.com/" }
+  #  - { platform: youtube,        user_url: "https://www.youtube.com/" }
+incremental: true
