@@ -4,49 +4,34 @@ title:  "My first post"
 date:   2020-01-18 +0530
 categories: jekyll update
 tags:
-  - whoami
+  - Linux 
 ---
 
-**The Story Of `WHOAMI`**
+`GRAPHICAL` OR `COMMAND LINE` (interface) <- `LINUX` (OS) <- `MACHINE` (computer) <- `FLOW OF ELECTRIC CURRENT` (charge) <- `ELECTRON`
 
-Nowadays, the world has became a glance hub,
+1. `DEBIAN COMMANDS`
 
-each day we are: creating, updating and removing.
+{% highlight bash %}
+sudo apt update; sudo apt upgrade
+{% endhighlight %}
 
-Users are learning about history to know, the PAST.
+2. `ARCH COMMANDS`
 
-RULES, REGULATIONS and TRUTH, TECHNOLOGY.
+{% highlight bash %}
+sudo pacman -Syu
+{% endhighlight %}
 
+3. `FEDORA COMMANDS`
 
-what astonishing is that user knows many things but doesn't know itself.
+{% highlight bash %}
+sudo dnf check-update; sudo dnf update
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm 
+sudo dnf update @core
+sudo dnf check-update; sudo dnf update
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm 
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf update
+sudo dnf update --refresh
+{% endhighlight %}
 
-consider themself as monitor, CPU processors.
-
-After all it set on our logical identity.
-
-But the illusive question arise, "WHO AM I?" in the system.
-
-When i see my complex circuit and registers.
-
-What it actually means, am i simply a machine.
-
-So users calls a server, but who are they, who directs the machine.
-
-
-
-I the eletron, am the master of the machine,
-
-And the machine is simple to users command of expression.
-
-my existence is internal, I the electron manages every signal 
-
-Of the machine through CPU.
-
-
-***Yes, I am a electron and electron is WHOAMI***.
-
-
-
-`LINUX` -> `GRAPHICAL` OR `COMMAND LINE` (interface) -> `MACHINE` (computer) -> `FLOW OF ELECTRIC CURRENT` (charge) -> `ELECTRON`
-
-**JUST for fun**, *the story* :)
+*the story* :)

@@ -14,8 +14,8 @@
 # in the templates via {{ site.myvariable }}.
 title: My Blogs
 author:
-  name: ajay0th
-  email: blog@ajay0th.github.io
+  name: stlajay
+  email: blog@stlajay.github.io
 
 description: >
   Hi there, nice to meet you. I appreciate for visiting and read my blogs.

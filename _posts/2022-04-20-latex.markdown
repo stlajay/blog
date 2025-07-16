@@ -1,0 +1,265 @@
+---
+layout: post
+title:  "Latex: making of CV ..."
+date:   2021-04-20 +0530
+categories: jekyll update
+tags:
+  - Latex 
+---
+Only Command Line.
+
+For windows and mac users, MikTex is good option to install on machine.
+In Linux, for Arch and Fedora based users the both MikTex and TexLive is out there to install. But for debain based users the texlive or gummi is fine to install it on the machine (PC).
+
+`Step 1`: **Choosing the Latex format**: pdflatex, lualatex or xelatex., according to your needs.
+
+{% highlight bash %}
+pdflatex Name_CV.tex
+{% endhighlight %}
+
+OR
+
+{% highlight bash %}
+xelatex Name_CV.tex
+{% endhighlight %}
+
+OR
+
+{% highlight bash %}
+lualatex Name_CV.tex
+{% endhighlight %}
+
+
+`Step 2`: **Creating the latex document** on the machine.
+
+you can go with simple notepad, notepad++, sublime-text or VS Code Editor.
+
+REMEMBER THIS FEW ELEMENTS OF CV.
+ YOUR NAME
+ CONTACT LISTS
+ EDUCATION
+ EXPERIENCE
+ PROJECTS
+ LEADESHIP / EXTRACURRICULAR (optional)
+
+{% highlight latex %}
+\documentclass[a4paper, 11pt]{article} % letterpaper, 10pt / 11pt / 12pt
+%% AUTHOR: USERNAME (GitHub)
+%% LATEX: PDFLATEX, LUALATEX, XELATEX
+%% PAPER: A4PAPER, LETTERPAPER
+{% endhighlight %}
+
+Common packages in latex for CV.
+
+{% highlight latex %}
+% ----- USEPACKAGES ----- %
+\usepackage{latexsym} % latex system
+\usepackage{fancyhdr} % Good header, heading
+\usepackage{geometry} % deciding lenght and width of page geometry 
+\usepackage{graphicx} % using graphics and diagram in CV
+\usepackage{titlesec}
+\usepackage{titling} % latex title like \thetitle or \theauthor
+\usepackage{blindtext} % no word breaking like 'resu- and next line -ume', but arrange will like 'resume'
+\usepackage{enumitem} % custom bullet points eg : \item[Email] abc@example.com
+\usepackage{ragged2e}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{setspace} % line spacing between sentences or words
+\usepackage{pifont} % specials symbols, eg: \ding{100}
+\usepackage[utf8]{inputenc}
+\usepackage{color} % system colors like 'red', 'orange', 'blue', etc.
+\usepackage[hidelinks]{hyperref} % CV linking is important, eg: href{https://www.latex-project.org}{Latex}
+\usepackage{xcolor} % custom colors made by you, eg: \definecolor{custom_color}{HTML}{FFFFFF}, hex code: FFFFFF
+{% endhighlight %}
+
+Font family for latex document 
+
+{% highlight latex %}
+% ----- FONTS ----- %
+% OPENTYPE - use this, if only you're compiling in pdflatex
+\usepackage{helvet} % bookman, serif, etc
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc} % base font series
+
+% CLOSEDTYPE OR DOWNLOADED FROM AN FONTS WEBSITE
+% use this, if only you are compiling in xelatex or lualatex but OPENTYPE CAN ALSO BE COMPILED FOR THIS
+%\usepackage{fontspec}
+%\setmainfont{Calibri}
+{% endhighlight %}
+
+Creaing custom command in latex document for CV
+{% highlight latex %}
+\renewcommand{\point}{\ding{100}} % this is only an example
+{% endhighlight %}
+
+
+
+
+{% highlight latex %}
+\begin{document}
+
+\begin{center} % centering items
+
+{\Huge{\textbf{your name} } } % highlighting name
+\vspace{8pt}
+
+\begin{enumerate*} % contact lists but this usd if the package is \usepackage[inline]{enumitem}
+  \item[] +X 2345 6789 XX
+  \item[$|$] email@mail.com
+  \item[$|$] Address / website
+\end{enumerate*}
+\end{center}
+
+% and so on ....
+
+\end{document}
+{% endhighlight %}
+
+`Step 3` **Decision making with the CV type for latex document**
+
+
+See that, if want to follow the chronological, functional(simple format CV), and combination (may be two-column CV) on the Internet or use AI models to lists for you, eg: chatgpt.
+
+See this examples of latex document.
+
+1. Functional CV,
+
+{% highlight latex %}
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{latexsym} % latex system
+\usepackage{fancyhdr} % Good header, heading
+\usepackage{geometry} % deciding lenght and width of page geometry 
+\usepackage{graphicx} % using graphics and diagram in CV
+\usepackage{titlesec}
+\usepackage{titling} % latex title like \thetitle or \theauthor
+\usepackage{blindtext} % no word breaking like 'resu- and next line -ume', but arrange will like 'resume'
+\usepackage[inline]{enumitem} % custom bullet points eg : \item[Email] abc@example.com
+\usepackage{ragged2e}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{setspace} % line spacing between sentences or words
+\usepackage{pifont} % specials symbols, eg: \ding{100}
+\usepackage[utf8]{inputenc}
+\usepackage{color} % system colors like 'red', 'orange', 'blue', etc.
+\usepackage[hidelinks]{hyperref} % CV linking is important, eg: href{https://www.latex-project.org}{Latex}
+\usepackage{xcolor} %
+
+
+\geometry{ a4paper, left=0.75in, right=0.75in, top=0.75in, bottom=0.75in }
+\linespread{1.0}
+
+\begin{document}
+
+\begin{center}
+
+{\Huge{\textbf{your name} } } % highlighting name
+\vspace{8pt}
+
+\begin{enumerate*} % contact lists but this usd if the package is \usepackage[inline]{enumitem}
+  \item[] +X 2345 6789 XX
+  \item[$|$] email@mail.com
+  \item[$|$] Address / website
+\end{enumerate*}
+
+\end{center} 
+
+\section*{Education}
+ % \subsection*{School name hfill City, Country}
+ % \subsubsection*{Bachelors in ..  hfill }
+  % there is no \subsubsubsection, but you can try to compile this document.
+
+\section*{Skills}
+\begin{description}[itemsep=1mm, parsep=0pt]
+  \item abc
+  \item def 
+\end{description}
+
+
+
+\section*{Experience}
+write here ...
+
+
+\section{Leadership}
+% 
+
+\justifying
+\end{document}
+{% endhighlight %}
+
+In terminal, folder/Name_CV.tex
+{% highlight bash %}
+pdflatex Name_CV.tex
+{% endhighlight %}
+
+AND 
+
+2. Two Column CV
+
+{% highlight latex %}
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{latexsym} % latex system
+\usepackage{fancyhdr} % Good header, heading
+\usepackage{geometry} % deciding lenght and width of page geometry 
+\usepackage{graphicx} % using graphics and diagram in CV
+\usepackage{titlesec}
+\usepackage{titling} % latex title like \thetitle or \theauthor
+\usepackage{blindtext} % no word breaking like 'resu- and next line -ume', but arrange will like 'resume'
+\usepackage[inline]{enumitem} % custom bullet points eg : \item[Email] abc@example.com
+\usepackage{ragged2e}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{setspace} % line spacing between sentences or words
+\usepackage{pifont} % specials symbols, eg: \ding{100}
+\usepackage[utf8]{inputenc}
+\usepackage{color} % system colors like 'red', 'orange', 'blue', etc.
+\usepackage[hidelinks]{hyperref} % CV linking is important, eg: href{https://www.latex-project.org}{Latex}
+\usepackage{xcolor} %
+
+
+\geometry{ a4paper, left=0.75in, right=0.75in, top=0.75in, bottom=0.75in }
+
+
+\begin{document}% noskip the line
+\begin{center} % centering items
+
+{\Huge{\textbf{your name} } } % highlighting name
+\vspace{8pt}
+
+\begin{enumerate*} % contact lists but this usd if the package is \usepackage[inline]{enumitem}
+  \item[] +X 2345 6789 XX
+  \item[$|$] email@mail.com
+  \item[$|$] Address / website
+\end{enumerate*}
+\end{center} % noskip the line
+\begin{minipage}{0.5\textwidth}
+
+\section*{Education}
+write here ...
+
+Skills 
+
+
+\end{minipage} % noskip the line
+\begin{minipage}{0.4\textwidth}
+
+\section*{Experience}
+write here ...
+
+Leadership
+
+
+
+\end{minipage} % noskip the line
+\end{document}
+{% endhighlight %}
+
+In terminal, folder/Name_CV.tex
+{% highlight bash %}
+lualatex Name_CV.tex 
+{% endhighlight %}
+
+See the demo video below:
+<div><iframe src="https://www.youtube.com/embed/71Yue3Bsljo?si=_XGgl42hXjhPLIjR" title="demo" width="560" height="300"  frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture; web-share" allowfullscreen></iframe></div>

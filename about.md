@@ -26,11 +26,11 @@ permalink: /about/
 - ☑️ Top qualifier @ Indian Army Hackathon 2022 (Secrity HQ)
 
 ## 📊 GitHub Stats
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ajay0th&theme=2077)
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=stlajay&theme=2077)
 
 <p align="left">
-	<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ajay0th&theme=blue_green" alt="Stats" style="width: 45%; display: inline-block;"  />
-	<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ajay0th&theme=blue_green" alt="Stats" style="width: 45%; display: inline-block;"  />
+	<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=stlajay&theme=blue_green" alt="Stats" style="width: 45%; display: inline-block;"  />
+	<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=stlajay&theme=blue_green" alt="Stats" style="width: 45%; display: inline-block;"  />
 </p>
 
 ## 🎯 Technologies
@@ -39,4 +39,4 @@ permalink: /about/
 ![My Skills](https://skillicons.dev/icons?i=linux,vscode,sqlite,mongodb,bash,bootstrap,figma,threejs,ps)
 
 #### Visitors 👀
-<img src="https://profile-counter.glitch.me/ajay0th/count.svg" target="_blank">
+<img src="https://profile-counter.glitch.me/stlajay/count.svg" target="_blank">
